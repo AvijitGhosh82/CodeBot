@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DecodeActivity" >
+<ScrollView android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentTop="true">   
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_centerInParent="true">
+
+    <EditText
+        android:id="@+id/decodekey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/decodeinput"
+        android:layout_alignRight="@+id/decodeinput"
+        android:layout_below="@+id/decodeinput"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Enter key"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/decodeBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/decodeoutput"
+        android:layout_alignRight="@+id/decodeSend"
+        android:layout_below="@+id/decodekey"
+        android:layout_marginTop="28dp"
+        android:text="GO!" />
+
+    <EditText
+        android:id="@+id/decodeinput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/decodeBut"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/decodeSend"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="Enter text to be decoded"
+        android:inputType="textMultiLine" >
+        
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/decodeoutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/decodeBut"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:hint="See the output here..."
+        android:inputType="textMultiLine" />
+
+    <ImageButton
+        android:id="@+id/decodeSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/decodeoutput"
+        android:layout_toRightOf="@+id/decodeoutput"
+        android:background="@null"
+        android:onClick="decodeSend"
+        android:src="@drawable/ic_send" />
+
+    </RelativeLayout>
+    
+</ScrollView>
+
+</RelativeLayout>

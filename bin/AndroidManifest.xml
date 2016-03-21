@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nemesis.secretcode"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-sdk
+        android:minSdkVersion="5"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Sherlock" >
+        <activity
+            android:name="com.nemesis.secretcode.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nemesis.secretcode.EncodeActivity"
+            android:label="@string/title_activity_encode"
+            android:parentActivityName="com.nemesis.secretcode.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nemesis.secretcode.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.nemesis.secretcode.DecodeActivity"
+            android:label="@string/title_activity_decode"
+            android:parentActivityName="com.nemesis.secretcode.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nemesis.secretcode.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.nemesis.secretcode.HelpActivity"
+            android:label="@string/title_activity_help"
+            android:parentActivityName="com.nemesis.secretcode.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nemesis.secretcode.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.nemesis.secretcode.listview"
+            android:label="My CodeBot Friends"
+            android:parentActivityName="com.nemesis.secretcode.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nemesis.secretcode.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

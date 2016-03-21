@@ -1,0 +1,223 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpActivity" >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="4sp" 
+   android:layout_marginLeft="10sp" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Welcome to CodeBot"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="The best app to create and read Secret Codes"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="It's incredibly easy to use. Let's begin." />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:layout_gravity="center"
+        android:text="1. THE HOMESCREEN"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_gravity="center"
+        android:src="@drawable/intro1" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:src="@drawable/intro2" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:layout_gravity="center"
+        android:text="The Homescreen consists of two buttons: Encode and Decode.
+The app supports two themes, deep and light. Choose any one!" />
+    
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+        android:text="2. CREATE YOUR OWN SECRET CODE"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:layout_gravity="center"
+        android:text="Click the Encode button.
+The Encode page will open." />
+    
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:src="@drawable/intro3" />
+    
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:layout_gravity="center"
+        android:text="Now is the fun part.
+Write your own Secret message in the text box. Now, add your own Key.
+A key is a unique number that you will assign to the code. This code is uniquely your's. Nobody except you and your recipient will know about this, so this secret is preserved.
+Now hit GO! And see the Secret Code appear. That was easy, wasn't it?" />
+    
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:src="@drawable/intro4" />
+    
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:layout_gravity="center"
+        android:text="You are now ready to use this code. Click the Copy Button on the top right, so that this code is copied in the system memory (Clipboard). Now paste it anywhere you wan't! Like Email, Messages, Facebook, etc. or invent fun new ways! (I, for example, use this app to text my Girlfriend. My friend uses it to generate an unique code for each sales item in his shop. The possibilities are endless!!! )
+Sometimes, the generated code might have invisible text. Normally, this isn't a cause to worry. You may check if the code is valid via Decode (more about that below). However, if you feel that's a problem, use a different  key.
+Last but not the least, you can use the Refresh button to start a new code. " />
+    
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:src="@drawable/intro5" />
+    
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:layout_gravity="center"
+        android:text="3. FIND THE MEANING OF A SECRET CODE"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:layout_gravity="center"
+        android:text="Click the Encode button. The Encode page will open.
+What will you do to convert the code into human readable text? Simple! Paste the code in the decode box, enter the correct key for the messasge, press GO! and bam! There you have your message!" />
+    
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:src="@drawable/intro6" />
+    
+    
+<TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:layout_gravity="center"
+        android:text="4. YOUR CODEBOT FRIENDS"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:layout_gravity="center"
+        android:text="So that was the coding part. However, you might want to assign a different key for every friend of yours. For that, you need a storage option, right? Well, it's totally easy with My CodeBot Contacts!
+Tap the contacts icon at the top right of the homescreen.
+You are presented a list. Tap the plus icon. Enter your friend's name and key, and done!
+Long pressing an item will allow you to edit it and delete it." />
+    
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:src="@drawable/intro7" />
+    
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:src="@drawable/intro8" />
+    
+    
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Wasn't that easy and fun! Drop me a line at my email (avijitg22@gmail.com) with suggestions and constructive criticisms. I'll be happy to hear from you!!" />
+    
+
+    
+
+    </LinearLayout>  </ScrollView>
+</RelativeLayout>

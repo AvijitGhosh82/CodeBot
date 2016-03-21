@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EncodeActivity" >
+<ScrollView android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentTop="true">   
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_centerInParent="true">
+
+    <EditText
+        android:id="@+id/encodekey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/encodeinput"
+        android:layout_alignRight="@+id/encodeBut"
+        android:layout_below="@+id/encodeinput"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Enter key"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/encodeBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/encodeoutput"
+        android:layout_alignRight="@+id/encodeSend"
+        android:layout_below="@+id/encodekey"
+        android:layout_marginTop="28dp"
+        android:text="GO!" />
+
+    <EditText
+        android:id="@+id/encodeinput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/encodeBut"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/encodeBut"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="Enter text to be encoded"
+        android:inputType="textMultiLine" >
+        
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/encodeoutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/encodeBut"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:hint="See the output here..."
+        android:inputType="textMultiLine" />
+    
+    <ImageButton
+        android:id="@+id/encodeSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/encodeoutput"
+        android:layout_toRightOf="@+id/encodeoutput"
+        android:background="@null"
+        android:onClick="encodeSend"
+        android:src="@drawable/ic_send" />
+
+    </RelativeLayout>
+    
+</ScrollView>
+
+</RelativeLayout>
